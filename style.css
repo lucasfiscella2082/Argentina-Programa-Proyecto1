@@ -1,0 +1,313 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    background-color: var(--primary-color);
+}
+
+:root {
+    
+    --primary-color: white;
+    --secondary-color: black; 
+}
+/* --------------- DARK MODE ---------------- */ 
+
+.dark-theme {
+    --primary-color: black;
+    --secondary-color: white;
+}
+/* HEADER */ 
+header {
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: rgb(118, 74, 104);
+}
+
+#icon { 
+    padding: 3px;
+    margin: 0 0;
+    width: 20px;
+    cursor: pointer;
+}
+
+header img {
+    width: 50px;
+    position: relative;
+    margin: 10px 10px;
+    padding: 5px 0px;
+    border-radius: 100px;
+    transition: transform .2s;
+}
+
+header img:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(7, 5, 7);
+}
+
+header p {
+    font-size: 15px;
+    color: #FFFFFF;
+    transition: transform .2s;
+}
+
+header p:hover {
+    color:rgb(25, 12, 12);
+    cursor: pointer;
+}
+
+/* --------------- SECCION 1 ---------------- */ 
+
+.sobre-mi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    color:var(--secondary-color);
+    gap: 20px;
+}
+
+.sobre-mi-container {
+    width: 25%;
+    padding: 0px;
+    border-left: 1px solid var(--secondary-color);
+}
+.sobre-mi-container h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.sobre-mi-container ul li{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 15px;
+    transition: transform .2s;
+}
+.sobre-mi-container li:hover {
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    color: pink;
+}  
+
+.sobre-mi-container i:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    color: pink;
+}
+
+.experiencia {
+    width: 70%;
+    padding: 0px;
+    border-left: 1px solid var(--secondary-color);
+    transition: transform .2s;
+}
+.experiencia h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.experiencia h3 {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 35px;
+}
+.experiencia h3:hover,
+.experiencia h3 i:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    color:rgb(230, 219, 118);
+}
+
+.experiencia p{
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 15px;
+
+}
+
+/* --------------- SECCION 2 ---------------- */ 
+
+
+.habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    color:var(--secondary-color);
+    gap: 20px;
+}
+
+.hard-skills {
+    width: 50%;
+    padding: 17px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+.hard-skills h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.hard-skills ul li{
+    font-size: 13px;
+    font-weight: 500;
+    text-align:center;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.hard-skills ul li:hover {
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    color: pink;
+}
+
+.soft-skills {
+    width: 50%;
+    padding: 17px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+.soft-skills h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.soft-skills ul li{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.soft-skills ul li:hover {
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    color: pink;
+}
+
+
+/* --------------- FOOTER ---------------- */ 
+
+.button-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.button-footer button {
+    border-color: grey;
+    border-radius: 10px; 
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.button-footer button:hover {
+    transition: all 0.5s ease;
+    color:rgb(118, 74, 104);
+}
+
+.button-footer button h2 {
+    font-size: 18px;
+}
+
+footer {
+    background-color: rgb(118, 74, 104);
+    color: black;
+    padding: 10px;
+    height: 15vh;
+    display: none;
+}
+
+footer h2 {
+ text-align: center;
+ text-decoration: underline;
+}
+.footer-redes {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-redes i{
+    font-size: 25px;
+    color:rgb(0, 0, 0);
+    transition: transform .2s;
+}
+
+.footer-redes i:hover {
+    color:rgb(255, 251, 251);
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+/* --------------- MEDIAQUERIES ---------------- */ 
+@media (min-width: 250px) {
+    header {
+        display: flex;
+        width: 100%;
+    }
+    .sobre-mi-container {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .experiencia {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+@media (max-width: 940px) {
+    body {
+        width: 100%;
+    }
+}
+
